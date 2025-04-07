@@ -1,4 +1,0 @@
-StudentHomeScreen:
-- Display list of available teachers
-- Select one to proceed
-- Button to go to StudentRequestScreen with selected teacher
