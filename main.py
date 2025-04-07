@@ -1,17 +1,29 @@
 import pygame
+from screen_manager import ScreenManager
 
-pygame.init()
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode((800, 600))
+    pygame.display.set_caption("Remote Learning Support System")
 
-WIDTH, HEIGHT = 800, 600
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Black Screen")
+    clock = pygame.time.Clock()
+    manager = ScreenManager()
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+    running = True
+    while running:
+        events = pygame.event.get()
+        for event in events:
+            if event.type == pygame.QUIT:
+                running = False
 
-    pygame.display.flip()
+        manager.handle_events(events)
+        manager.update()
+        manager.draw(screen)
 
-pygame.quit()
+        pygame.display.flip()
+        clock.tick(60)
+
+    pygame.quit()
+
+if __name__ == "__main__":
+    main()
