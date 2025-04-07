@@ -1,5 +1,0 @@
-StudentRequestScreen:
-- Show list of topics (e.g., math, physics...)
-- Each topic has 3 color choices (green/yellow/red)
-- Textbox for extra message
-- Button to 'Send Request' to selected teacher

@@ -1,4 +1,0 @@
-TeacherHomeScreen:
-- Display list of student requests
-- Each entry shows student name + brief topic summary
-- Click to open full request in TeacherViewRequestScreen

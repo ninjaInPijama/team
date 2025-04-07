@@ -1,5 +1,0 @@
-LoginScreen:
-- Input field for username
-- Choose user type (student/teacher)
-- Button to enter system
-- On enter: switch to correct home screen
