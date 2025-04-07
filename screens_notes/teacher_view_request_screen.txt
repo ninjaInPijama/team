@@ -1,0 +1,4 @@
+TeacherViewRequestScreen:
+- Show full details of selected request
+- student_name, message, topics with difficulty
+- Back button to return to TeacherHomeScreen
